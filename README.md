@@ -63,6 +63,4 @@ Phone: +92 3197193966
 
 LinkedIn: Hussan Bano
 
-License
 
-This project is open-source and free to use under the MIT License.
