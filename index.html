@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussan Bano | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1E1E2F;
+            --secondary-color: #4ECCA3;
+            --accent-color: #FF6F61;
+            --text-light: #F9F9F9;
+            --text-dark: #333333;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: var(--primary-color);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: var(--secondary-color);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-light);
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            background: var(--accent-color);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #FF473A;
+        }
+
+        section {
+            padding: 4rem 5%;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+        }
+
+        .project-card {
+            background: var(--secondary-color);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hussan Bano</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Software Developer | Web Developer | Problem Solver</h2>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Hussan Bano, a passionate and dedicated Computer Science student at FAST NUCES Faisalabad, currently in my third year. With a strong foundation in programming, algorithms, and data structures, I thrive on solving complex problems and developing innovative software solutions. My expertise spans across web development, system design, and competitive programming. Apart from coding, I have a keen interest in customer engagement, digital marketing, and brand development.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>GitHub-Like System</h3>
+            <p>A C++ project that mimics GitHub's core functionalities, allowing users to create repositories, commit changes, manage branches, and collaborate. This project implements file handling, user authentication, and a command-line interface to simulate version control.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Mini Instagram</h3>
+            <p>A social media platform developed in C++ that allows users to create profiles, upload photos, like posts, and follow other users. The backend includes a structured database for storing user data and interactions.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Alibaba Clone</h3>
+            <p>A full-fledged e-commerce website inspired by Alibaba, developed using HTML, CSS, and JavaScript. It features a responsive design, user authentication, product listings, and an interactive cart system.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Snake Game (Assembly Language)</h3>
+            <p>A classic Snake game built using Assembly Language, demonstrating low-level programming and memory management. The game utilizes BIOS interrupts and direct memory access for real-time graphics rendering.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Hussan's Handicrafts (Personal Brand Website)</h3>
+            <p>A personal branding website developed to showcase and market handmade products. The website includes modules like Learners, Careers, and a Buy section, with complete Signup, Sign-in, and Forgot Password functionalities. It also features email authentication and verification for secure user access.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Bean Bags Marketing Project</h3>
+            <p>A successful semester project focused on the marketing and branding of bean bags. This project involved extensive research on consumer behavior, product positioning, digital marketing strategies, and customer engagement techniques to enhance product sales and brand recognition.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's connect! You can reach out to me via:</p>
+        <ul>
+            <li><strong>Phone:</strong> +92 3197193966</li>
+            <li><strong>Email:</strong> <a href="mailto:banoh958@gmail.com">banoh958@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hussan-bano-b207b525a" target="_blank">linkedin.com/in/hussan-bano-b207b525a</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hussan Bano. All rights reserved.</p>
+    </footer>
+</body>
+</html>
